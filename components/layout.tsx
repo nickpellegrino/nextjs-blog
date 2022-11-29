@@ -13,7 +13,7 @@ export default function Layout({
   home?: boolean
 }) {
   return (
-    <div className="container mx-auto">
+    <div className="container max-w-full bg-indigo-800">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -29,17 +29,17 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="container mx-auto">
+      <header className="text-white text-xl w-full grid container mx-auto center-content justify-center justify-items-center align-middle">
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              height={144}
-              width={144}
+              height={275}
+              width={325}
               alt={name}
+              className="rounded-full mx-auto border-8 my-8 border-indigo-200"
             />
-            <h1>{name}</h1>
           </>
         ) : (
           <>

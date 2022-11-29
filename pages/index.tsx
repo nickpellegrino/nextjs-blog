@@ -19,18 +19,17 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="grid content-center">
-        <p className="text-3xl font-bold underline">Nick Pellegrino</p>
-        <p className="text-2xl">This is a learning project to better understand nextjs and typescript.</p>
+      <section className= "container max-w-full mx-auto content-center justify-center grid place-content-center text-center pb-10">
+        <p className="text-7xl text-gray-300 my-5 font-bold">Nick Pellegrino</p>
+        <p className="text-slate-300 text-xl italic">This is a learning project to better understand nextjs and typescript.</p>
       </section>
-      <section>
-        <h2>Blog</h2>
-        <ul>
+      <section className="grid container max-w-full mx-auto justify-center items-center content-center justify-items-center items-center">
+        <ul className="grid content-center items-center justify-center place-content-center mb-10 shadow-xl">
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+            <li key={id} className="text-2xl text-white pb-10 bg-indigo-900 border-indigo-400 border-l-8 p-10 mt-5">
+              <Link href={`/posts/${id}`} className="text-yellow-300">{title}</Link>
               <br />
-              <small>
+              <small className="text-indigo-100 font-bold text-md">
                 <Date dateString={date} />
               </small>
             </li>
