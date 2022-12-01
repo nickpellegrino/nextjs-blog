@@ -66,6 +66,9 @@ export default function Layout({
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <footer>
+      
+      </footer>
     </div>
   )
 }
