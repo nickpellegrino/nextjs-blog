@@ -26,7 +26,7 @@ export default function Home({
       <section className="grid container max-w-full mx-auto justify-center items-center content-center justify-items-center items-center">
         <ul className="grid content-center items-center justify-center place-content-center mb-10">
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id} className="text-2xl text-white pb-10 bg-indigo-900 border-indigo-400 shadow-md border-l-8 p-10 mt-5">
+            <li key={id} className="text-2xl text-white pb-10 bg-indigo-900 border-indigo-400 shadow-md border-l-8 p-10 mt-5 hover:animate-bounce">
               <Link href={`/posts/${id}`} className="text-yellow-300">{title}</Link>
               <br />
               <small className="text-indigo-500 font-bold text-md">
