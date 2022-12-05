@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/footer'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
@@ -36,9 +37,7 @@ export default function Home({
           ))}
         </ul>
       </section>
-      <footer className="grid container max-w-full mx-auto justify-center items-center content-center justify-items-center bg-indigo-900 text-slate-50 p-16 font-bold">
-        built with nextjs // @nickpellegrino
-      </footer>
+      <Footer></Footer>
     </Layout>
   )
 }
