@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from './footer'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -47,25 +48,29 @@ export default function Layout({
               <Image
                 priority
                 src="/images/profile.jpg"
-                height={108}
-                width={108}
+                height={200}
+                width={200}
                 alt={name}
+                className="rounded-full mx-auto border-8 my-3 border-indigo-200"
               />
             </Link>
             <h2>
               <Link href="/">
-                {name}
+                {siteTitle}
               </Link>
             </h2>
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
       {!home && (
-        <div>
+        <div className="text-center text-yellow-200 text-2xl m-5">
           <Link href="/">← Back to home</Link>
         </div>
       )}
+    <Footer></Footer>
     </div>
   )
 }

@@ -37,7 +37,6 @@ export default function Home({
           ))}
         </ul>
       </section>
-      <Footer></Footer>
     </Layout>
   )
 }
