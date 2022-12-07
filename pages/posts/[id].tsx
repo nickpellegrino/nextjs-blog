@@ -10,6 +10,7 @@ export default function Post({
   postData: {
     title: string
     date: string
+    excerpt: string
     contentHtml: string
   }
 }) {
@@ -20,6 +21,7 @@ export default function Post({
       </Head>
       <article className="container max-w-lg mx-auto">
         <h1 className="text-4xl font-bold text-yellow-300 text-center mt-10 border-indigo-400 bg-indigo-900 border-l-8 p-8 m-0">{postData.title}</h1>
+        <h4 className="text-md italic text-white border-indigo-400 bg-slate-800 border-l-8 p-8 m-0">{postData.excerpt}</h4>
         <div className="text-xl text-right bg-slate-900 border-l-8 border-indigo-400 shadow-md p-2 text-yellow-200">
           <Date dateString={postData.date} />
         </div>

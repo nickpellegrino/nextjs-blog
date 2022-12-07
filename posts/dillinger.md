@@ -1,6 +1,7 @@
 ---
 title: 'Dillinger, The Last Markdown Editor.'
 date: '2022-12-06'
+excerpt: 'Dillinger is a cloud-enabled, mobile-ready, offline-storage'
 ---
 
 # Dillinger
