@@ -66,7 +66,7 @@ export default function Layout({
         {children}
       </main>
       {!home && (
-        <div className="text-center text-yellow-200 text-2xl m-5">
+        <div className="bg-indigo-900 border-l-8 p-8 m-0 max-w-lg mx-auto text-center text-yellow-200 text-2xl m-5">
           <Link href="/">← Back to home</Link>
         </div>
       )}
